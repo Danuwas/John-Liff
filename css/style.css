@@ -1,8 +1,12 @@
 button {
   display: block;
   width: 100%;
-  padding: 8px 0;
-  margin: 8px auto
+  padding: 18px 0;
+  margin: 8px auto;
+  font-size: 18px;
+  background-color: #118742;
+  border: solid 1px #056214;
+  color: white;
 }
 
 p {
