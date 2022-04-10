@@ -29,10 +29,10 @@
   <p id="universalLink2"><b>Universal Link with Query params:</b> </p>
   <p><a href="liff/path/?param=9">Link to Path</a></p>-->
 
-  <button id="btnMsg" onclick="sendMsg()">Send Message</button>
+  <!-- <button id="btnMsg" onclick="sendMsg()">Send Message</button> -->
   <button id="btnShare" onclick="shareMsg()">Share Target Picker</button>
-  <button onclick="openWindow()">Open Window</button>
-  <button id="btnScanCode" onclick="scanCode()">Scan Code</button>
+  <!-- <button onclick="openWindow()">Open Window</button> -->
+  <!-- <button id="btnScanCode" onclick="scanCode()">Scan Code</button> -->
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <button id="btnClose" onclick="closed()">Close</button>
 
@@ -346,18 +346,18 @@
       }
     }
 
-    async function sendMsg() {
-      if (liff.getContext().type !== "none") {
-        await liff.sendMessages([
-          {
-            "type": "sticker",
-            "stickerId": 2,
-            "packageId": 1
-          }
-        ])
-        alert("message sent")
-      }
-    }
+    // async function sendMsg() {
+    //   if (liff.getContext().type !== "none") {
+    //     await liff.sendMessages([
+    //       {
+    //         "type": "sticker",
+    //         "stickerId": 2,
+    //         "packageId": 1
+    //       }
+    //     ])
+    //     alert("message sent")
+    //   }
+    // }
 
     function getContext() {
       document.getElementById("type").append(liff.getContext().type)
