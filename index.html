@@ -317,7 +317,6 @@
   }
 }
       ])
-      alert("message sent")
     }
 
     function logOut() {
@@ -389,14 +388,10 @@
       document.getElementById("isInClient").append(liff.isInClient())
       if (liff.isInClient()) {
         document.getElementById("btnLogOut").style.display = "none"
-        document.getElementById("btnMsg").style.display = "none"
-        document.getElementById("btnScanCode").style.display = "none"
-        document.getElementById("openWindow").style.display = "none"
       } else {
         document.getElementById("btnMsg").style.display = "none"
         document.getElementById("btnScanCode").style.display = "none"
         document.getElementById("btnClose").style.display = "none"
-        document.getElementById("openWindow").style.display = "none"
       }
     }
 
