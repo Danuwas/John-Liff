@@ -329,15 +329,9 @@
     }
 
     async function scanCode() {
-      const result = await liff.scanCode()
-      document.getElementById("scanCode").append(result.value)
     }
 
     function openWindow() {
-      liff.openWindow({
-        url: "https://line.me",
-        external: true
-      })
     }
 
     async function getFriendship() {
@@ -351,16 +345,6 @@
     }
 
     async function sendMsg() {
-      if (liff.getContext().type !== "none") {
-        await liff.sendMessages([
-          {
-            "type": "sticker",
-            "stickerId": 2,
-            "packageId": 1
-          }
-        ])
-        alert("message sent")
-      }
     }
 
     function getContext() {
